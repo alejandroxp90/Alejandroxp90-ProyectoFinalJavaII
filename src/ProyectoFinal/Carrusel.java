@@ -177,7 +177,7 @@ public class Carrusel extends javax.swing.JFrame {
         File f=   choser.getSelectedFile();
         String archivo = f.getAbsolutePath().replace("\\", "\\\\");
         try{
-            Imagensita img =new Imagensita("titulo",archivo,"descripcion");
+            Imagensita img =new Imagensita("Nueva Imagen Encontrada",archivo,"Aquí se Encontrara la descripcion de la nueva imagen, donde se describiran sus datos Principales.");
             ArrayList<Imagensita> lista=g.leerTodas();
             lista.add(img);
             g.setImagenes(lista);
